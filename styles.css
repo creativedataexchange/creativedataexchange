@@ -1,0 +1,129 @@
+/* Import editorial fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Animated gradient background */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  line-height: 1.7;
+
+  background: linear-gradient(
+    120deg,
+    #f5f7fa,
+    #e8eef6,
+    #f0f4fb,
+    #e3ecf5
+  );
+  background-size: 300% 300%;
+  animation: gradientMove 18s ease infinite;
+}
+
+/* Subtle motion */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Layout */
+.container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 60px 20px 80px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  font-size: 0.9rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #444;
+  margin-right: 20px;
+}
+
+nav a:hover {
+  opacity: 0.6;
+}
+
+/* Typography */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 12px;
+}
+
+p {
+  color: #333;
+  margin-bottom: 18px;
+  font-size: 1rem;
+}
+
+.subtitle {
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Sections */
+section {
+  margin-top: 40px;
+}
+
+/* Lists */
+ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* Cards */
+.card {
+  padding: 18px;
+  border-radius: 10px;
+  margin-top: 15px;
+  border: 1px solid #e3e8ef;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+}
+
+/* Button */
+.cta {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-size: 0.95rem;
+  background: linear-gradient(135deg, #4a6cf7, #7b5cff);
+}
+
+.cta:hover {
+  opacity: 0.85;
+}
+
+/* Footer */
+footer {
+  margin-top: 80px;
+  font-size: 0.85rem;
+  color: #777;
+}

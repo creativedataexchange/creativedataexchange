@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
-body {
-  font-family: 'Montserrat', sans-serif;
-}
 /* Reset */
 * {
   margin: 0;
@@ -10,9 +7,9 @@ body {
   box-sizing: border-box;
 }
 
-/* Animated gradient background */
+/* Base body */
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #111;
   line-height: 1.7;
 
@@ -27,7 +24,7 @@ body {
   animation: gradientMove 18s ease infinite;
 }
 
-/* Subtle motion */
+/* Animation */
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -130,14 +127,11 @@ footer {
   color: #777;
 }
 
+/* QR code */
 .qr-code {
-  width: 100%;
   max-width: 250px;
+  width: 100%;
   height: auto;
   display: block;
   margin: 20px auto;
-}
-
-body {
-  background: red !important;
 }

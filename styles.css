@@ -137,3 +137,7 @@ footer {
   display: block;
   margin: 20px auto;
 }
+
+body {
+  background: red !important;
+}

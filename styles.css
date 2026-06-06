@@ -2,6 +2,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+}
 /* Reset */
 * {
   margin: 0;
@@ -127,4 +128,12 @@ footer {
   margin-top: 80px;
   font-size: 0.85rem;
   color: #777;
+}
+
+.qr-code {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
 }

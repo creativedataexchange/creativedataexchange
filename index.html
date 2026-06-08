@@ -3,233 +3,195 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Creative Data Exchange</title>
-
-  <meta name="description" content="Creative Data Exchange provides a space for open conversations about creative work with data, AI and creative practice." />
-
-  <style>
-    :root {
-      --page-bg: #f7f7f7;
-      --paper-bg: #ffffff;
-      --text: #111111;
-      --muted: #555555;
-      --link: #0645ad;
-      --border: #dddddd;
-      --max-width: 820px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      margin: 0;
-      padding: 32px 16px;
-      background: var(--page-bg);
-      color: var(--text);
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    main {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 48px;
-      background: var(--paper-bg);
-      border: 1px solid var(--border);
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    }
-
-    img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      margin: 0 0 8px 0;
-    }
-
-    .image-placeholder {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      display: grid;
-      place-items: center;
-      margin: 0 0 8px 0;
-      background:
-        linear-gradient(135deg, rgba(40, 40, 40, 0.12), rgba(120, 120, 120, 0.08)),
-        #eeeeee;
-      border: 1px solid #cccccc;
-      color: #555555;
-      text-align: center;
-      padding: 24px;
-    }
-
-    .photo-credit {
-      margin: 0 0 28px 0;
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    h1,
-    h2 {
-      margin: 32px 0 12px 0;
-      font-size: 20px;
-      line-height: 1.35;
-      font-weight: 700;
-    }
-
-    h1:first-child,
-    h2:first-child {
-      margin-top: 0;
-    }
-
-    p {
-      margin: 0 0 16px 0;
-    }
-
-    ul {
-      margin: 0 0 16px 24px;
-      padding: 0;
-    }
-
-    li {
-      margin: 4px 0;
-    }
-
-    a {
-      color: var(--link);
-      text-decoration: underline;
-    }
-
-    strong,
-    b {
-      font-weight: 700;
-    }
-
-    em,
-    i {
-      font-style: italic;
-    }
-
-    .register-link {
-      margin: 20px 0;
-      font-weight: 700;
-    }
-
-    .register-link a {
-      font-weight: 700;
-    }
-
-    @media (max-width: 640px) {
-      body {
-        padding: 0;
-        background: var(--paper-bg);
-      }
-
-      main {
-        padding: 24px 18px;
-        border: 0;
-        box-shadow: none;
-      }
-    }
-
-    @media print {
-      body {
-        background: #ffffff;
-        padding: 0;
-      }
-
-      main {
-        max-width: none;
-        padding: 0;
-        border: 0;
-        box-shadow: none;
-      }
-
-      a {
-        color: #000000;
-      }
-    }
-  </style>
+  <meta name="description" content="A space for open conversations at the intersection of creative practice, data, and AI." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <main>
-    <!--
-      The Word extraction only showed the image as "data:image/jpeg;base64...",
-      not the full base64 image data.
-
-      To use the exact image from the document:
-      1. Export the image from Word.
-      2. Save it in your repository as assets/creative-data-exchange.jpg.
-      3. Replace the placeholder below with:
-         <img src="assets/creative-data-exchange.jpg" alt="">
-    -->
-
-<img src="assets/creative-data-exchange.jpg" alt="">
-
-
-    <p class="photo-credit">
-      Photo by <a href="[unsplash.com](https://unsplash.com/%40valiant_lambda?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)">Valiant Lambda</a> on <a href="[unsplash.com](https://unsplash.com/photos/woman-in-red-skirt-in-abstract-art-installation-foVv_PyD-ZY?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText)">Unsplash</a>
-    </p>
-
-    <h1>About Creative Data Exchange</h1>
-
-    <p>New technology has been disrupting creative practice since before the invention of the paintbrush. But perhaps it has been some time since it had the potential to fundamentally change the way we create across arts disciplines and different stages of the creative process.</p>
-
-    <p>And as with most big changes, the Data &amp; AI hype emerged around serious ethical and safety concerns, as well as mysticism, driving curiosity but also provoking anger and hesitation to engage.</p>
-
-    <p>“Creative Data Exchange” is the antidote to that. It provides a space for open conversations about creative work with data, to share your questions and ambitions and to find routes to answers in good company.</p>
-
-    <p>Creative Data Exchange is <em>presented by the</em> <a href="[contemporarynarratives.org](http://www.contemporarynarratives.org)"><em>Contemporary Narratives Lab</em></a> <em>in partnership with</em> <a href="[gold.ac.uk](https://www.gold.ac.uk/news/2026/foci/)"><em>Goldsmiths Futures of Creativity Institute</em></a> <em>(FOCI) and</em> <a href="[fueltheatre.com](https://fueltheatre.com/)"><em>Fuel Theatre Company</em></a><em>. It is supported by the</em> <a href="[software.ac.uk](https://www.software.ac.uk/)"><em>Software Sustainability Institute</em></a> <em>via an SSI Fellowship 2026.</em></p>
-
-    <h2>What are we inviting you for?</h2>
-
-    <p>Up to 2 hours of a conversation about creative practice, AI and data.</p>
-
-    <p>The driving questions are:</p>
-
-    <ul>
-      <li>“how can data and AI help develop (your) creative practice?” and</li>
-      <li>“how can creative practice help develop data &amp; AI technologies?”</li>
+  <div class="ambient-grain"></div>
+  <nav class="nav">
+    <span class="nav-logo">Creative Data Exchange</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#invitation">Invitation</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#facilitators">Team</a></li>
+      <li><a href="#motivation">Why</a></li>
     </ul>
-
-    <p>And you can further shape the agenda with your questions by signing up to attend the free call.</p>
-
-    <p class="register-link"><a href="[forms.gle](https://forms.gle/LZoS68G4pexbBR1J6)">REGISTER HERE</a></p>
-
-    <h2>What happens after the conversation?</h2>
-
-    <p>We are forming a community of interested artists, creatives, and researchers to keep the conversation going. You will be invited to join the <strong>Alan Turing Institute’s AI&amp;Arts group</strong>, where we can continue to meet online via the group’s Slack space. We will have a <em>Creative Data Exchange</em> channel to be in touch with the groups who have been through our community calls, but you also will have access to an international community of over 500 members who are arts practitioners, researchers, policymakers and funders, based in all continents, who are interested in working in the intersection of art and data.</p>
-
-    <p>Your contributions to the online calls will feed a free programme of in-person, hands-on, workshops to be advertised to the community first.</p>
-
-    <h2>Who is going to be there?</h2>
-
-    <p>We are inviting experienced creative practitioners with little to no experience using data who are curious to learn more.</p>
-
-    <p>The people facilitating the meeting will be:</p>
-
-    <p><strong>André Piza</strong>, who is leading this project as a Software Sustainability Institute Fellow 2026, is a community developer at heart, with a background as a creative practitioner, producer and research programme manager. For over 7 years, he has managed and coordinated research delivery of the Alan Turing Institute's flagship Digital Humanities programmes, like <a href="[livingwithmachines.ac.uk](https://livingwithmachines.ac.uk/)">Living with Machines</a> and the <a href="[zenodo.org](https://zenodo.org/records/15083396)">Research Software Engineering Capability Roadmap</a>. Previously, he has managed major international creative and research projects at <a href="[peoplespalaceprojects.org.uk](http://www.peoplespalaceprojects.org.uk/en/)">People’s Palace Projects</a>, an arts research centre based at Queen Mary University of London where he also worked as Knowledge Exchange Manager for the Creative Industries. His work there included collaborating with arts organisations, policy institutions, and independent artists and activists.</p>
-
-    <p>He has written about cultural exchange practice in <a href="[vernonpress.com](https://vernonpress.com/book/493)">The Art of Cultural Exchange</a> (2019) and is an Organiser of the <a href="[turing.ac.uk](https://www.turing.ac.uk/research/interest-groups/ai-arts)">Turing’s AI&amp;Arts interest group</a>. He currently manages the <a href="[costarnetwork.co.uk](https://www.costarnetwork.co.uk/labs/foresightlab)">CoSTAR Foresight Lab</a>, based at Goldsmiths University of London.</p>
-
-    <p><strong>Kaspar Beelen</strong> is a digital historian who explores the impact of datafication and machine learning on humanities research. After obtaining his interdisciplinary PhD in history and linguistics (2014) at the University of Antwerp, he worked as a postdoctoral fellow at the University of Toronto, as a researcher on the Digging into Linked Parliamentary Data (Dilipad) project. In 2016, Kaspar moved to the University of Amsterdam, where he first worked as a postdoc and later became an assistant professor in Digital Humanities (Media Studies). Between 2019 and 2023, he worked at the Alan Turing Institute as a research associate for the Living with Machines project, where he focused on understanding biases in large historical collections. Currently, he works as Technical Lead Digital Humanities at the School of Advanced Study, University of London, exploring the use of multimodal and vision models for cultural heritage<strong>.</strong></p>
-
-    <p><a href="[eur01.safelinks.protection.outlook.com](https://eur01.safelinks.protection.outlook.com/?url=http%3A%2F%2Frosiewood.uk%2F&amp;data=05%7C02%7CA.Piza%40gold.ac.uk%7Cdf2d3a2041bb4e05fccd08dec16dd971%7C0d431f3f20c1461c958a46b29d4e021b%7C0%7C0%7C639160874715423498%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=LyRnM%2FXN1cwXn3Nbgo%2FftVqxX3oJnZAP%2Ba9O1seIN2k%3D&amp;reserved=0)"><strong>Rosie Wood</strong></a> is a Research Software Engineer working at the Alan Turing Institute. From 2023 to 2025 she worked as part of the <a href="[eur01.safelinks.protection.outlook.com](https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Flivingwithmachines.ac.uk%2F&amp;data=05%7C02%7CA.Piza%40gold.ac.uk%7Cdf2d3a2041bb4e05fccd08dec16dd971%7C0d431f3f20c1461c958a46b29d4e021b%7C0%7C0%7C639160874715460488%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=V%2F9fZJxTrBx61jRFPScMsK2xQ7g2QMn8mUzLQBIiFXQ%3D&amp;reserved=0)">Living with Machines</a> and <a href="[eur01.safelinks.protection.outlook.com](https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.turing.ac.uk%2Fresearch%2Fresearch-projects%2Fdataculture-building-sustainable-communities-around-arts-and-humanities&amp;data=05%7C02%7CA.Piza%40gold.ac.uk%7Cdf2d3a2041bb4e05fccd08dec16dd971%7C0d431f3f20c1461c958a46b29d4e021b%7C0%7C0%7C639160874715479344%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=kLovREz%2FaiSvuSqD0aqzXMfGsdMjVoG%2FO%2FSZE5WjkMc%3D&amp;reserved=0)">Data/Culture</a> projects where she was core developer for <a href="[eur01.safelinks.protection.outlook.com](https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fgithub.com%2Fmaps-as-data%2FMapReader&amp;data=05%7C02%7CA.Piza%40gold.ac.uk%7Cdf2d3a2041bb4e05fccd08dec16dd971%7C0d431f3f20c1461c958a46b29d4e021b%7C0%7C0%7C639160874715496602%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=HRnOQHBT%2B%2F1%2B%2B67Ulfwtcw3wDOTuL6KdJkBfWu2hmQQ%3D&amp;reserved=0)">MapReader</a> - a computer vision pipeline for analysing large collections of historical maps. Since then, she’s been part of the Research Computing team at the Turing, where she works with High Performance Computing (HPC) systems - including providing training and support for Turing researchers wanting to use HPC, benchmarking HPC applications and running model training and inference on GPU. She is also part of the <a href="[eur01.safelinks.protection.outlook.com](https://eur01.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.turing.ac.uk%2Fresearch%2Fresearch-projects%2Fproject-t0&amp;data=05%7C02%7CA.Piza%40gold.ac.uk%7Cdf2d3a2041bb4e05fccd08dec16dd971%7C0d431f3f20c1461c958a46b29d4e021b%7C0%7C0%7C639160874715513964%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=TCxd7A%2Fay279Gbor3i5%2B9QsOZjwARtuWlZSykWEnZEk%3D&amp;reserved=0)">t0 team</a>, which focuses on applications of local LLMs and agentic AI.</p>
-
-    <p><strong>Lydia France</strong> is an AI engineer at Marker and an Ai in Science research fellow at the University of Oxford. After obtaining her PhD in bird flight (2019) at Oxford, she worked as a Research Software Engineer at the Alan Turing Institute between 2021 and 2026. Lydia worked on cross-disciplinary projects including Digital Humanities and AI for climate forecasting. Earlier this year she moved to Marker, a startup making software for writers that puts human creativity and writing first (and not writing for you!). She is currently working on training small language models that are energy efficient and privacy first. Her university research uses data-driven methods to understand coordinated movement in animals, particularly wings in bird flight. She also regularly performs and teaches Improv Comedy as part of the Oxford Imps and has been previously involved with Young Fiction Writing communities.</p>
-
-    <h2>Why are they facilitating these conversations?</h2>
-
-    <p>We are passionate about art and technology but we have seen the recent advances increasing the digital divide. Those who had experience and felt confident to onboard the AI boat have done so. But there hasn’t been much opportunity for artists who are unfamiliar with this technology to get clarity beyond the hype. This is a systemic problem with many implications for creative practice, not least related to copyrights, visibility and funding of creative work, digital or not. This is bad for technology development, which gets narrower, involving a smaller set of artistic questions and practice. And it is bad for artists too, who may miss out on opportunities and debates that are crucial for their development and that of the creative industries more generally. So we want to understand from this community what it takes to break those barriers and create opportunities for the community itself to drive this change.</p>
-
-    <p>Your data is processed according to the Goldsmiths University of London <a href="[gold.ac.uk](https://www.gold.ac.uk/data-protection/privacy-notices/)">privacy notice</a>.</p>
-  </main>
+    <a href="https://forms.gle/LZoS68G4pexbBR1J6" target="_blank" class="nav-cta">Register</a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+  </nav>
+  <section id="hero" class="hero">
+    <div class="hero-bg-image"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">Contemporary Narratives Lab</span>
+      <h1 class="hero-title">Creative<br /><span class="hero-title-accent">Data Exchange</span></h1>
+      <p class="hero-subtitle">Open conversations at the intersection of art, data and artificial intelligence.</p>
+      <div class="hero-cta-group">
+        <a href="https://forms.gle/LZoS68G4pexbBR1J6" target="_blank" class="btn btn-primary">Register Now</a>
+        <a href="#about" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">About Creative Data Exchange</h2>
+          <p class="lead-text">An antidote to AI hype. A provocation for change. A space where technology is demystified through collaborative conversation.</p>
+          <p>Creative Data Exchange is an initiative presented by the <a href="http://www.contemporarynarratives.org" target="_blank">Contemporary Narratives Lab</a>, in partnership with <a href="https://www.gold.ac.uk/news/2026/foci/" target="_blank">Goldsmiths Futures of Creativity Institute</a> and <a href="http://fueltheatre.com/" target="_blank">Fuel Theatre Company</a>. Supported by a 2026 <a href="https://www.software.ac.uk/" target="_blank">Software Sustainability Institute Fellowship</a>.</p>
+          <div class="partners">
+            <span class="partner-tag">Art</span>
+            <span class="partner-tag">Data</span>
+            <span class="partner-tag">AI</span>
+            <span class="partner-tag">Ethics</span>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="visual-card">
+            <span class="visual-label">Driving Question</span>
+            <p class="visual-quote">How can data and AI develop creative practice — and conversely, how can creative practice shape the development of data and AI technologies?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="invitation" class="section invitation">
+    <div class="container">
+      <h2 class="section-title">What We Are Asking</h2>
+      <p class="section-intro">Two-hour conversations for experienced creative practitioners with little to no prior experience using data.</p>
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-icon">✉</div>
+          <h3>Facilitation</h3>
+          <p>Structured dialogues led by researchers and practitioners at the intersection of data, AI and the arts.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">👥</div>
+          <h3>Community</h3>
+          <p>Access to the Alan Turing Institute's AI&amp;Arts group and a wider international network of 500+ arts practitioners.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">📗</div>
+          <h3>Workshops</h3>
+          <p>Contributions from these conversations will inform a future, free programme of in-person, hands-on workshops.</p>
+        </article>
+        <article class="card">
+          <div class="card-icon">🗝</div>
+          <h3>Dialogue</h3>
+          <p>Ethical, safety and creative concerns addressed through collaborative conversation — not monologue.</p>
+        </article>
+      </div>
+      <div class="cta-block">
+        <p class="cta-text">Ready to join the conversation?</p>
+        <a href="https://forms.gle/LZoS68G4pexbBR1J6" target="_blank" class="btn btn-primary btn-large">Register Here</a>
+      </div>
+    </div>
+  </section>
+  <section id="community" class="section community">
+    <div class="container">
+      <h2 class="section-title">What Happens After</h2>
+      <p class="section-intro">The conversation doesn't end when the session closes.</p>
+      <div class="community-stats">
+        <div class="stat-item">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Arts practitioners, researchers and policymakers in the network</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">1</span>
+          <span class="stat-label">Alan Turing Institute AI&amp;Arts group access</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">∞</span>
+          <span class="stat-label">Ongoing community formation</span>
+        </div>
+      </div>
+      <div class="community-cta">
+        <p class="community-cta-text">Your voice shapes the future of how creative practitioners engage with technology.</p>
+        <a href="https://www.turing.ac.uk/research/interest-groups/ai-arts" target="_blank" class="btn btn-outline">Explore the AI&amp;Arts Group →</a>
+      </div>
+    </div>
+  </section>
+  <section id="facilitators" class="section facilitators">
+    <div class="container">
+      <h2 class="section-title">Who Is Going to Be There</h2>
+      <p class="section-intro">Four facilitators, one shared mission.</p>
+      <div class="facilitators-grid">
+        <article class="facilitator-card">
+          <div class="facilitator-avatar fa-1">AP</div>
+          <div class="facilitator-info">
+            <h3>André Piza</h3>
+            <p class="facilitator-role">Software Sustainability Institute Fellow</p>
+            <p class="facilitator-bio">Leads the initiative with a focus on bridging technology and creative practice.</p>
+          </div>
+        </article>
+        <article class="facilitator-card">
+          <div class="facilitator-avatar fa-2">KB</div>
+          <div class="facilitator-info">
+            <h3>Kaspar Beelen</h3>
+            <p class="facilitator-role">Digital Humanities</p>
+            <p class="facilitator-bio">Brings expertise in computational approaches to historical and cultural analysis.</p>
+          </div>
+        </article>
+        <article class="facilitator-card">
+          <div class="facilitator-avatar fa-3">RW</div>
+          <div class="facilitator-info">
+            <h3>Rosie Wood</h3>
+            <p class="facilitator-role">Research Software Engineer</p>
+            <p class="facilitator-bio">Works on projects including Living with Machines and the Research Software Engineering Capability Roadmap.</p>
+          </div>
+        </article>
+        <article class="facilitator-card">
+          <div class="facilitator-avatar fa-4">LF</div>
+          <div class="facilitator-info">
+            <h3>Lydia France</h3>
+            <p class="facilitator-role">AI Engineer</p>
+            <p class="facilitator-bio">Engages with People's Palace Projects, The Art of Cultural Exchange, t0 team, and Data/Culture.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="motivation" class="section motivation">
+    <div class="container">
+      <div class="motivation-block">
+        <h2 class="section-title">Why Are They Facilitating These Conversations?</h2>
+        <blockquote class="motivation-quote">There is a digital divide that excludes many artists from vital debates on copyright, visibility and funding in an age of algorithmic transformation.</blockquote>
+        <p class="motivation-text">These conversations are motivated by a desire to bridge that divide — to create a space where artists, researchers and technologists can meet on equal ground, ask difficult questions, and imagine better systems together.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section final-cta">
+    <div class="container">
+      <h2 class="final-cta-title">Join the Exchange</h2>
+      <p class="final-cta-text">Your perspective matters. Register today.</p>
+      <a href="https://forms.gle/LZoS68G4pexbBR1J6" target="_blank" class="btn btn-primary btn-large">Register Now</a>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">Creative Data Exchange</span>
+          <p class="footer-tagline">Art · Data · AI · Community</p>
+        </div>
+        <nav class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#invitation">Invitation</a>
+          <a href="#community">Community</a>
+          <a href="#facilitators">Team</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-credits">Presented by <a href="http://www.contemporarynarratives.org" target="_blank">Contemporary Narratives Lab</a>, in partnership with <a href="https://www.gold.ac.uk/news/2026/foci/" target="_blank">Goldsmiths FOCI</a> and <a href="http://fueltheatre.com/" target="_blank">Fuel Theatre Company</a>.</p>
+        <p class="footer-privacy">Data processed in accordance with the <a href="https://www.gold.ac.uk/data-protection/privacy-notices/" target="_blank">Goldsmiths University of London privacy notice</a>.</p>
+        <p class="footer-copyright">© 2026 Creative Data Exchange. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

@@ -157,3 +157,7 @@ footer {
   justify-content: center;
   gap: 40px;
 }
+
+.logo-row img {
+  height: 50px;
+}
